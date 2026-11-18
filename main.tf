@@ -11,7 +11,7 @@ module "ec2" {
 
 module ansible {
     depends_on = [
-        ec2
+        module.ec2
     ]
     source = "./ansible"
     component = var.component
