@@ -2,7 +2,7 @@ resource "aws_instance" "ec2" {
     for_each = var.component
     ami = var.ami
     instance_type = "t3.micro"
-    vpc_security_group_ids = var.sg_id
+    vpc_security_group_ids = ["var.sg_id"]
 
     tags = {
         Name= each.key
