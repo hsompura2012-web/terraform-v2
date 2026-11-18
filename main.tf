@@ -7,6 +7,7 @@ module "ec2" {
     component = var.component
     ami = var.ami
     sg_id = module.ec2-sg.sg_id
+    zone_id = var.zone_id
 }
 
 module ansible {
