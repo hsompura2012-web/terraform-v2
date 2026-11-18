@@ -1,3 +1,4 @@
 output "public_ip" {
-    value = aws_instance.ec2[each.key].public_ip
+    value = for key, instance in aws_instance.ec2 :
+    key => instance.public_ip  
 }
