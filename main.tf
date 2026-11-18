@@ -6,7 +6,7 @@ module "ec2" {
     source = "./ec2"
     component = var.component
     ami = var.ami
-    sg_id = module.network.sg_id
+    sg_id = module.ec2-sg.sg_id
 }
 
 module ansible {
