@@ -17,3 +17,7 @@ variable "component"{
     # dispatch=""        
     }
 }
+
+variable "zone_id" {
+    default="Z03480463A1JR2GW8CJL3"
+}
